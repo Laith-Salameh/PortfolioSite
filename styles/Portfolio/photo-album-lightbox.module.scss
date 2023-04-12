@@ -1,0 +1,23 @@
+@import '../colors';
+
+.wrapper {
+    padding: 15px 15px 5px 15px;
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid $primary-color;
+    margin-bottom: 100px;
+    background-color: $secondary-color;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    gap: 12px;
+
+    & > * {
+        flex-basis: 300px;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}

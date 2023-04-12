@@ -1,0 +1,61 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+@import "../componants/textswitcher.scss";
+.main {
+    min-height: 100vh;
+    gap: 20vh;
+    h1{
+      font-size: 3rem;
+      color: $primary-color;
+      margin: 0 0 100px 0;
+      padding: 0;
+    }
+}
+
+.skill{
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  .title{
+    color: $text-color;
+    text-align: center;
+    font-size: 2rem;
+    @media screen and (max-width: 720px) {
+      width: 200px;
+    }
+    > span{
+      color: $primary-color;
+    }
+  }
+  .center{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    @media screen and (max-width: 720px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+  
+.textSwitcher{
+  @include styling( $font-size: 2rem);
+  li{
+    color: $primary-color !important;
+    text-align: center !important;
+  }
+
+}

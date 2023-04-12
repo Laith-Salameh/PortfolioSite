@@ -1,0 +1,134 @@
+@import "../colors";
+@import "../sizes";
+
+$gap: 300px;
+.timeline-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    padding: 0 200px;
+}
+
+$point-size: 25px;
+.pc{
+    font-size: 1.1rem;
+    .cirlce{
+        width: $point-size;
+        height: $point-size;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: relative;
+        &:not(:last-child){
+            &::after{
+                content: "";
+                height: 2px;
+                width: $gap/2 + $point-size;
+                background: $primary-color;
+                display: block;
+                position: absolute;
+                top: 50%;
+            }   
+        }
+        &:not(:first-child){
+            &::before{
+                content: "";
+                height: 2px;
+                width: $gap/2 + $point-size;
+                background: $primary-color;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+            }   
+        }
+        .time{
+            color: $text-color;
+            width: 5rem;
+            position: absolute;
+            bottom: 0;
+            font-size: 1rem;
+            transform: translate(-50%, 150%);
+            left: 50%;
+        }
+        .action{
+            color: $text-color;
+            width: 300px;
+            position: absolute;
+            transform-origin: bottom left;
+            left: 50%;
+            transform: translate(-50%, -120%);
+            text-align: center;
+            span{
+                color: $primary-color;
+            }
+            
+        }
+    }
+}
+
+.tablet{
+    font-size: 1.2rem;
+    flex-direction: column;
+    margin: 50px 0 200px 0;
+    padding: 0 100px 0 0;
+    gap: 400px;
+    @media screen and (max-width: $mobile-width) {
+        margin: 50px 0 320px 0;
+    }
+    .cirlce{
+        width: $point-size;
+        height: $point-size;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: relative;
+        &:not(:last-child){
+            &::after{
+                content: "";
+                width: 2px;
+                height: 200 + $point-size;
+                background: $primary-color;
+                display: block;
+                position: absolute;
+                right: 50%;
+            }   
+        }
+        &:not(:first-child){
+            &::before{
+                content: "";
+                width: 2px;
+                height: 200 + $point-size;
+                background: $primary-color;
+                display: block;
+                position: absolute;
+                right: 50%;
+                bottom: 0;
+            }   
+        }
+        .time{
+            color: $text-color;
+            width: 5rem;
+            position: absolute;
+            bottom: 0;
+            font-size: 1rem;
+            transform: translate(-100%, 0);
+        }
+        .action{
+            color: $text-color;
+            width: 300px;
+            @media screen and (max-width: $mobile-width) {
+                width: 100px;
+            }
+            position: absolute;
+            transform: translate(2.5rem, 0);;
+            text-align: center;
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+}

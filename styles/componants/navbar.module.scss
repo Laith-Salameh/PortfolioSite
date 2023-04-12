@@ -1,0 +1,49 @@
+@import "../colors";
+@import "../sizes";
+
+
+.nav{
+    position: absolute;
+    right: calc(100vw/12);
+    font-size: 1.5rem;
+    z-index: 100;
+    @media screen and (max-width: $tablet-width ) {
+        right: unset;
+        position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    padding-top: 1rem;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+        li{
+            list-style: none;
+            color: $text-color;
+            border-bottom: 2px solid $primary-color;
+            &:hover{
+                padding-bottom: 6px;
+                transition: padding 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            &:nth-last-child(1){
+                background-color: $primary-color;
+                border-radius: 15px;
+                border: 2px solid $secondary-color;
+                padding: 0.5rem 2rem;
+                color: $secondary-color;
+                text-decoration: none;
+                &:hover{
+                    transform: translate3d(0,-5px,0);
+                    transition: transform 1s ease;
+                }
+            }
+        }
+    }
+}

@@ -4,16 +4,28 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.15",
+    "@types/lodash": "^4.14.192",
+    "animejs": "^3.2.1",
+    "lodash": "^4.17.21",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-photo-album": "^2.0.4",
+    "sass": "^1.60.0",
+    "yet-another-react-lightbox": "^3.4.0"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.7",
+    "@types/glob": "^8.1.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.32",
     "@types/react-dom": "18.0.11",

@@ -1,0 +1,80 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+.main {
+    min-height: 100vh;
+    gap: 1rem;
+    position: relative;
+    .container{
+      width: 80%;
+      height: 400px;
+      gap: 1rem;
+      h1{
+        font-size: 3rem;
+        color: $primary-color;
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+    .rights{
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+      color: $primary-color;
+      text-align: center;
+    }
+    
+  
+}
+
+.contacts{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  @media screen and (max-width: $mobile-width){
+    align-items: center;
+  }
+  .contact:first-child .icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+  }  
+
+}
+.contact{
+  gap: 1rem;
+  .icon{
+    width: 60px;
+    height: 60px;
+  }
+
+  .text{
+    color: $text-color;
+    font-size: 2rem;
+    &:hover{
+      transform: translate(10px,0);
+      transition: transform 1s ease;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    gap: 0.5rem;
+    flex-direction: column;
+    
+    .text{
+      font-size: 1.1rem;
+      transform: none !important;
+    }
+  }
+}
+
+
+
+
+
+  
+
+

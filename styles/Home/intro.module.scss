@@ -1,0 +1,138 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+@import "../componants/textswitcher.scss";
+.main {
+    padding-top: 2rem;
+    min-height: calc(100vh - 2rem);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    @media screen and (max-width: $tablet-width ) {
+        justify-content: unset;
+    }
+}
+  
+.portrait-container{
+  position: relative;
+  min-width: 400px;
+  aspect-ratio: 1/1;
+  background-color: $primary-color;
+  border-radius: 50% ;
+  overflow: hidden;
+  @media screen and (max-width: $tablet-width ) {
+    margin: 1rem;
+  }
+  @media screen and (max-width: $mobile-width ) {
+    width: 100%;
+    max-width: 300px;
+    min-width: unset;
+    margin: 2rem;
+
+  }
+  .portrait{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 409/609;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -27%);
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+.intro{
+  width: 100%;
+  @media screen and (max-width: 900px ) {
+    padding-left: 1rem;
+  }
+  .name{
+    margin-left: -0.3rem;
+    font-size: 6rem;
+    color: $primary-color;
+    @media screen and (max-width: $mobile-width ) {
+      font-size: 4rem;
+    }
+  }
+  .location{
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    align-items: center;
+    color: $text-color;
+    svg{
+      margin-right: 3px;
+      color: red;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.brief{
+  font-size: 2rem;
+  @media screen and (max-width: $mobile-width ) {
+    font-size: 1.3rem;
+  }
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  span:nth-child(even){
+    color: $text-color;
+  }
+  span:nth-child(odd){
+    color: $primary-color;
+  }
+
+}
+
+.discover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3rem;
+  min-height: calc(3rem + 20px);
+  svg{
+    font-size: 4.5rem !important;
+    color: $primary-color;
+    position: absolute;
+    animation: move 10s ease infinite;
+  }
+  span{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: $text-color;
+    height: 2rem;
+    width: fit-content;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: $mobile-width ) {
+    .textSwitcher{
+        @include styling( $font-size: 1.3rem)
+    }
+}
+
+@media screen and (min-width: $mobile-width ) {
+  .textSwitcher{
+        @include styling( $font-size: 2rem)
+  }
+}
+
+
+
+@keyframes move {
+  0%, 20%, 40% ,60% ,100%{ top: 5px;}
+  10% ,30%, 50%{ top: 15px;}
+}

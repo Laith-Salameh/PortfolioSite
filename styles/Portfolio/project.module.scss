@@ -1,0 +1,35 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+.main {
+    min-height: 100vh;
+    gap: 1rem;
+    h1{
+      font-size: 3rem;
+      color: $primary-color;
+      margin: 100px 0 0 0;
+      padding: 0;
+    }
+    abbr{
+      text-decoration: none;
+    }
+    p{
+      white-space: break-spaces;
+      text-align: justify;
+      margin: 0;
+      border-radius: 1rem;
+      width: 65%;
+      font-size: 1.5rem;
+      color: $text-color;
+      strong{
+        color: $primary-color;
+      }
+      margin-bottom: 1rem;
+      @media screen and (max-width: $mobile-width) {
+        text-align: center;
+      }
+    }
+}
+  
+
+

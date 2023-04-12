@@ -1,0 +1,28 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+.main {
+    min-height: 100vh;
+    gap: 1rem;
+    h1{
+      font-size: 3rem;
+      color: $primary-color;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      white-space: break-spaces;
+      text-align: justify;
+      margin: 0;
+      border-radius: 1rem;
+      width: 65%;
+      font-size: 1.5rem;
+      color: $text-color;
+      span{
+        color: $primary-color;
+        font-weight: 600;
+      }
+      margin-bottom: 1rem;
+    }
+}
+  
