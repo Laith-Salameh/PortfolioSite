@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect, useRef, useState } from "react";
 import styles from "../../../styles/Home/portfolio.module.scss"
 import useOnScreen from "../../../customHooks/useOnScreen";
 import { Grid } from "@mui/material";
-import {IProject } from "../../../pages/api/Portfolio"
+import {IProject } from "../../../src/dataprovider"
 import Logos, { ILogo } from "../../Icons/Portfolio";
 
 
