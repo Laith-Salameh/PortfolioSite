@@ -17,7 +17,7 @@ const Project : FunctionComponent<IProject> = ({ title, brief, technologies, liv
         <main>
             <div className={"section "+ styles.main }>
                 <h1 ref={Titleref} className={isVisibleTitleref}>{title}</h1>
-                <p ref={Briefref} className={isVisibleBriefref}>
+                <p ref={Briefref} className={isVisibleBriefref} lang="en">
                     <span dangerouslySetInnerHTML={{__html: brief}}></span>. 
                      Using: {technologies.map((tech,i,n)=>{
                         if( (i+1 == n.length) ){

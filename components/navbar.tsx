@@ -21,6 +21,7 @@ const items= [
         link: "mailto:contact@laithsalameh.com?subject=Hello, I'd Like to ..."
     }
 ]
+
 const NavBar: FunctionComponent = ()=>{
     const router = useRouter();
     const { route } = router;

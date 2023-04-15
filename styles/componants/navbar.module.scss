@@ -30,7 +30,6 @@
             border-bottom: 2px solid $primary-color;
             &:hover{
                 padding-bottom: 6px;
-                transition: padding 1s cubic-bezier(0.075, 0.82, 0.165, 1);
             }
             &:nth-last-child(1){
                 background-color: $primary-color;

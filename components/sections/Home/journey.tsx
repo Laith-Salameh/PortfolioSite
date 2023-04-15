@@ -2,6 +2,7 @@ import { FunctionComponent, useRef } from "react";
 import styles from "../../../styles/Home/journey.module.scss"
 import TimeLine from "../../timeline";
 import useOnScreen from "../../../customHooks/useOnScreen";
+import Link from "next/link";
 
 const Journey : FunctionComponent = ()=>{
     const Journyref = useRef<HTMLDivElement>(null)
@@ -25,7 +26,7 @@ const timelinePoints= [
     },
     {
         time: new Date(2020,1),
-        Description: <>Built my First Website using <span>MVC</span> architectural pattern and <span>PHP</span></>
+        Description: <Link href="/Portfolio/Kraken-Academy">Built my First Website using <span>MVC</span> architectural pattern and <span>PHP</span></Link>
     },
     {
         time: new Date(2021,8),
@@ -33,7 +34,7 @@ const timelinePoints= [
     },
     {
         time: new Date(2022,7),
-        Description: <>Finalized Graduation Project titled <span><q>Traffic Surveillance System with Map Visualization</q></span></>
+        Description: <Link href="/Portfolio/Graduation-Project">Finalized Graduation Project titled <span><q>Traffic Surveillance System with GIS Integration</q></span></Link>
     },
     {
         time: new Date(2022,8),

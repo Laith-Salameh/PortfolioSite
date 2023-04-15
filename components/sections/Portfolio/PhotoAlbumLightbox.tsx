@@ -13,7 +13,7 @@ const PhotoAlbumLightbox: FunctionComponent<{photos: Photo[]}> = ({photos}) => {
   return (
     <div className={styles.wrapper + isVisibleWrapper} ref={Wrapperref}>
       <PhotoAlbum
-        photos={photos.filter(image => image.src.endsWith('.jpg') || image.src.endsWith('.png'))}
+        photos={photos.filter(image => image.src.endsWith('.jpg') || image.src.endsWith('.png') || image.src.endsWith('.jpeg') )}
         layout="rows"
         breakpoints={[300, 400, 600, 900, 1200]}
         spacing={12}
@@ -27,7 +27,7 @@ const PhotoAlbumLightbox: FunctionComponent<{photos: Photo[]}> = ({photos}) => {
       }
       </div>
       <Lightbox
-        slides={photos.filter(image => image.src.endsWith('.jpg') || image.src.endsWith('.png'))}
+        slides={photos.filter(image => image.src.endsWith('.jpg') || image.src.endsWith('.png') || image.src.endsWith('.jpeg') )}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}

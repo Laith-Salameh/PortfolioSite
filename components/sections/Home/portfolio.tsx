@@ -18,11 +18,14 @@ const Portfolio : FunctionComponent<{projects: IProject[]}> = ({projects})=>{
                 <h1 id="Portfolio" ref={Titleref} className={isVisibleTitleref}>Portfolio</h1>
                 <div ref={Cardref} className={styles["card-back"] + isVisibleCard}></div>
                 <PortfolioContainer >
-                    {
-                        projects.map((proj,i)=>(
-                            <PortfolioCard key={i} Icon={Logos[proj.icon]} title={proj.title} path={proj.path} />
-                        ))
-                    }
+                    <>
+                        {
+                            projects.map((proj,i)=>(
+                                <PortfolioCard key={i} Icon={Logos[proj.icon]} title={proj.title} path={proj.path} />
+                            ))
+                        }
+                        <PortfolioLastCard title="Let's Create this Project Together" link="mailto:contact@laithsalameh.com?subject=Hello, I'd Like to ..."/>
+                    </>
                 </PortfolioContainer>
             </div>
         </section>
@@ -51,6 +54,21 @@ const PortfolioCard :FunctionComponent< {title:  string, Icon?: FunctionComponen
                 path ? <a href={"/Portfolio/"+path}>{content}</a> 
                      : content 
             }
+        </Grid>
+    )
+}
+
+const PortfolioLastCard :FunctionComponent< {title:  string, link: string} > = ({title, link})=>{
+    const Cardref = useRef<HTMLDivElement>(null)
+    const IsVisible = useOnScreen(Cardref);
+    const isVisibleCard = IsVisible ? " appear" : " disappear-bottom";
+    return (
+        <Grid ref={Cardref} className={isVisibleCard} item xs={12} sm={4} md={4} > 
+            <a href={link}>
+                <div className={styles["work-card"] + " " +styles.active}> 
+                    <div className={styles["work-card-title"]}>{title}</div>
+                </div>
+            </a>
         </Grid>
     )
 }

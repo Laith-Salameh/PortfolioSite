@@ -25,11 +25,16 @@ export const getStaticPaths: GetStaticPaths = () => {
 
 export const getStaticProps: GetStaticProps = (context) => {
   const slug = context.params?.slug;
-  const project = apiRequest();
+  const project = apiRequest().filter((proj)=> proj.path == slug)[0];
+  if(!project){
+    return {
+      notFound: true
+    }
+  }
 
   return {
     props: {
-      project: project?.filter((proj)=> proj.path == slug)[0]
+      project: project
     }
   }
 }

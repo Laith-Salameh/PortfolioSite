@@ -75,7 +75,7 @@
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translate(-60%, -50%);
+        transform: translate(-100%, -50%);
       }
       &::before{
         content: "";
@@ -86,7 +86,7 @@
         background-color: $secondary-color;
         top: 50%;
         right: 0;
-        transform: translate(60%, -50%);
+        transform: translate(100%, -50%);
       }
     }
     &:hover {
@@ -102,6 +102,20 @@
         transition: top 1s ease, opacity 1s ease;
      }
     }
+}
+
+.active{
+  background-color: #01c38dCC;
+      border-color: $secondary-color;
+      .icon{
+        display: none;
+      }
+      > .work-card-title{
+        top: 50%;
+        transform: translate(0, -50%);
+        opacity: 1;
+        transition: top 1s ease, opacity 1s ease;
+     }
 }
 
 

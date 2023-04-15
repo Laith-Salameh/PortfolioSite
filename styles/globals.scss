@@ -111,7 +111,7 @@ border-radius: 10px;
 
 .disappear{
   opacity: 0;
-  transform: translate3d(0,50px,0);
+  transform: translate3d(0,25px,0);
   transition: transform 1s ease, opacity 1s ease;
 }
 
@@ -167,6 +167,19 @@ border-radius: 10px;
 .moon{
   width: 60% !important
 }
+
+.grad, .hotel, .book{
+  g, path{
+    transition: fill-opacity 1s ease;
+ }
+}
+.hotel, .book{
+  width: 50% !important;
+}
+.kraken, .castled{
+  width: 60% !important;
+}
+
 
 @keyframes appear {
   100%{ opacity: 1;}
