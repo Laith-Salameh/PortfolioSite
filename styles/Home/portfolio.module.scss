@@ -63,6 +63,9 @@
       position: absolute;
       width: 50%;
       font-size: 2rem;
+      @media screen and (max-width: $tablet-width) and (min-width: 700px) {
+        font-size: 1.5rem;
+      }
       color: $secondary-color;
       opacity: 0;
       top: calc(50% + 50px);
