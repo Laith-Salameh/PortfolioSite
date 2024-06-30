@@ -124,7 +124,7 @@
     }
 }
 
-@media screen and (min-width: $mobile-width ) {
+@media screen and (min-width: calc($mobile-width + 1px)  ) {
   .textSwitcher{
         @include styling( $font-size: 2rem)
   }

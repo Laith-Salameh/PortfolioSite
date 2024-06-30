@@ -24,7 +24,7 @@ const Portfolio : FunctionComponent<{projects: IProject[]}> = ({projects})=>{
                                 <PortfolioCard key={i} Icon={Logos[proj.icon]} title={proj.title} path={proj.path} />
                             ))
                         }
-                        <PortfolioLastCard title="Let's Create this Project Together" link="mailto:contact@laithsalameh.com?subject=Hello, I'd Like to ..."/>
+                        <PortfolioLastCard title="Let's Create this Project Together" link="mailto:laith.salameh25@gmail.com?subject=Hello, I'd Like to ..."/>
                     </>
                 </PortfolioContainer>
             </div>

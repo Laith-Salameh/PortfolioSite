@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react"
+import { FunctionComponent,useEffect,useState } from "react"
 
 interface ITextSwitcher{
     styles: {
@@ -8,10 +8,15 @@ interface ITextSwitcher{
     staticText?: string
 }
 const TextSwitcher : FunctionComponent<ITextSwitcher> = ({ tasks, staticText, styles })=>{
-    return  <div className={ styles.textSwitcher }>
+    const [mounted,setMounted] = useState(false);
+    useEffect(()=>{
+        setMounted(true);
+    },[])
+    
+    return  <div className={ styles.textSwitcher}>
                         {staticText && <span className={styles.staticText}>{staticText}</span>}
                         <div className={styles.dynamicTasks}>
-                            <ul >
+                            <ul className={`${ mounted ? styles.animateMovemntTextSwitcher : ""}`}>
                                 { tasks.map((task,i)=>{
                                     return <li key={"task"+i}>{task}</li>
                                 })}

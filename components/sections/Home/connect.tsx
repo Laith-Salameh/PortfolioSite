@@ -18,7 +18,7 @@ const Connect : FunctionComponent = ()=>{
                 <div className={styles.contacts}>
                     <div className={styles.contact + " center"}>
                         <EmailIcon className={styles.icon} /> 
-                        <span className={styles.text}><a href="mailto:contact@laithsalameh.com?subject=Hello, I'd Like to ...">contact@laithsalameh.com</a></span>
+                        <span className={styles.text}><a href="mailto:laith.salameh25@gmail.com?subject=Hello, I'd Like to ...">laith.salameh25@gmail.com</a></span>
                     </div>
                     <div className={styles.contact + " center"}>
                         <GitHubIcon className={styles.icon} /> 

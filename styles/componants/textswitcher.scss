@@ -17,7 +17,7 @@
             padding: 0;
             text-align: left;
             list-style: none;
-            animation: change 10s infinite;
+            
             li{
                 font-weight: 900;
                 text-align: left;
@@ -37,8 +37,12 @@
         overflow: hidden;
         min-width: 100px;
     }
-}
 
+    .animateMovemntTextSwitcher{
+        animation: change 10s infinite;
+    }
+    
+}
 
 
 

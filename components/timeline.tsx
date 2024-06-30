@@ -13,7 +13,7 @@ const TimeLine : FunctionComponent< {points: IPointinTimeInterface[]}> = ( {poin
     return (
         <div  className={styles["timeline-container"] + isTablet}>
             {   
-                points.sort((a,b)=>(a.time.getTime() - b.time.getTime()))
+                points.sort((a,b)=>(b.time.getTime() - a.time.getTime()))
                       .map((point,i)=> <PointinTime key={"point"+i} time={point.time} Description={point.Description}/>)
             }
         </div>

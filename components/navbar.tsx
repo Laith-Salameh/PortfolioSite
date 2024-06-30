@@ -18,7 +18,7 @@ const items= [
     },
     {
         text: "Hire Me",
-        link: "mailto:contact@laithsalameh.com?subject=Hello, I'd Like to ..."
+        link: "mailto:laith.salameh25@gmail.com?subject=Hello, I'd Like to ..."
     }
 ]
 

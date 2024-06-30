@@ -25,10 +25,6 @@ const timelinePoints= [
         Description: <>Joinded <span>HIAST</span> starting a BSc in <span>Software Engineering</span></>
     },
     {
-        time: new Date(2020,1),
-        Description: <Link href="/Portfolio/Kraken-Academy">Built my First Website using <span>MVC</span> architectural pattern and <span>PHP</span></Link>
-    },
-    {
         time: new Date(2021,8),
         Description: <>Started Working for <span>Sama Pay</span> as a <span>Full Stack Web Developer</span></>
     },
@@ -42,7 +38,19 @@ const timelinePoints= [
     },
     {
         time: new Date(2022,9),
-        Description: <a href="https://www.facebook.com/hiast.edu.sy/posts/420630603583672">Awarded <span>Best Informatics Project By FMEE</span> exhibition held in Damascus University</a>
+        Description: <a href="https://www.facebook.com/hiast.edu.sy/posts/420630603583672" target="_blank">Awarded <span>Best Informatics Project By FMEE</span> exhibition held in Damascus University</a>
+    },
+    {
+        time: new Date(2023,2),
+        Description: <>Relocated to<span> Dubai </span>to be a part of its<span> growing tech industry</span></>
+    },
+    {
+        time: new Date(2023,3),
+        Description: <>Joined <a href="https://datacellme.com/" target="_blank"><span>Datacell Solutions</span></a> as a <span>Senior Full-stack Web Developer</span></>
+    },
+    {
+        time: new Date(2023,11),
+        Description: <>Outsourced to <a href="https://www.dha.gov.ae" target="_blank"><span>Dubai Health Authority</span></a> as a <span>Senior .Net Developer</span></>
     }
 ]
 

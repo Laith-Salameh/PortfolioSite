@@ -12,9 +12,10 @@ const About : FunctionComponent = ()=>{
             <div className={"section "+ styles.main }>
                 <h1 ref={Titleref} className={isVisibleTitleref}>About me</h1>
                 <p ref={Briefref} className={isVisibleBriefref}>
-                    <span>Software Engineer</span> who has been enthusiastic about programming since <span>10<sup>th</sup> grade</span>.
-                    Over the years, I have built a steady foundation in <span>Object Oriented Programming </span> 
-                    and developed strong skills in both <span>Web Development</span> and <span>Machine Learning</span>. 
+                    <span>Senior Software Engineer</span> who has been enthusiastic about programming for <span>9 years</span>.
+                    I bring proficiently in <span>translating business requirements and Figma designs into functional systems</span>. 
+                    In addition to my technical skills, I excel in <span>project planning and delivery</span>, 
+                    ensuring <span>timely and efficient</span> development cycles.
                 </p>
             </div>
         </section>

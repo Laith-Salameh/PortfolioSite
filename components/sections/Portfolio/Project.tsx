@@ -28,8 +28,8 @@ const Project : FunctionComponent<IProject> = ({ title, brief, technologies, liv
                         }
                      })}
                 </p>
-                {liveLink && <a ref={Linkref} className={"button-group" + isVisibleLinkref} href={liveLink}>Visit Live Website</a>}
-                {gitHubLink && <a ref={GitLinkref} className={"button-group" + isVisibleGitLinkref} href={gitHubLink}>Check GitHub Code</a>}
+                {liveLink && <a ref={Linkref} target="_blank" className={"button-group" + isVisibleLinkref} href={liveLink}>Visit Live Website</a>}
+                {gitHubLink && <a ref={GitLinkref} target="_blank" className={"button-group" + isVisibleGitLinkref} href={gitHubLink}>Check GitHub Code</a>}
                 {
                     images && <PhotoAlbumLightbox photos={
                         images.map(( image, i) => ({
