@@ -50,7 +50,7 @@ const timelinePoints= [
     },
     {
         time: new Date(2023,11),
-        Description: <>Outsourced to <a href="https://www.dha.gov.ae" target="_blank"><span>Dubai Health Authority</span></a> as a <span>Senior .Net Developer</span></>
+        Description: <>Outsourced to <a href="https://www.dha.gov.ae" target="_blank"><span>Dubai Health Authority</span></a> as a <span>Senior Software Engineer</span></>
     }
 ]
 

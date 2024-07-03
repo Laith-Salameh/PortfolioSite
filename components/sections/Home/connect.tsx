@@ -4,6 +4,8 @@ import useOnScreen from "../../../customHooks/useOnScreen";
 import EmailIcon from "../../Icons/Connect/email"
 import LinkedInIcon from "../../Icons/Connect/linkedInIcon"
 import GitHubIcon from "../../Icons/Connect/gitIcon"
+import ChessdotCommIcon from "../../Icons/Connect/chess"
+
 
 
 const Connect : FunctionComponent = ()=>{
@@ -27,6 +29,10 @@ const Connect : FunctionComponent = ()=>{
                     <div className={styles.contact + " center"}>
                         <LinkedInIcon className={styles.icon} /> 
                         <span className={styles.text}><a href="https://www.linkedin.com/in/Laith-Salameh/">linkedin.com/in/Laith-Salameh</a></span>
+                    </div>
+                    <div className={styles.contact + " center"}>
+                        <ChessdotCommIcon className={styles.icon} /> 
+                        <span className={styles.text}><a href="https://www.chess.com/play/online/new?isInvited=1&opponent=laithsalameh25">chess.com/play/laithsalameh25</a></span>
                     </div>
                 </div>
             </div>
